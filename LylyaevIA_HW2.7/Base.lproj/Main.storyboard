@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="02j-l9-VdC" id="Zuu-Fr-Onh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="sy3-3x-rRo"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" selectedImage="person.circle" catalog="system" id="sy3-3x-rRo"/>
                     <navigationItem key="navigationItem" title="Persons List" id="8hj-wJ-QNo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aet-Gt-6ZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p69-2W-eOG">
-                                <rect key="frame" x="15" y="231" width="384" height="21"/>
+                                <rect key="frame" x="15" y="211" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                         <constraints>
                             <constraint firstItem="mvF-lr-30n" firstAttribute="trailing" secondItem="ivT-wL-yq7" secondAttribute="trailing" constant="15" id="7xZ-XH-nTp"/>
                             <constraint firstItem="mvF-lr-30n" firstAttribute="trailing" secondItem="p69-2W-eOG" secondAttribute="trailing" constant="15" id="RO0-sC-rmU"/>
-                            <constraint firstItem="p69-2W-eOG" firstAttribute="top" secondItem="ivT-wL-yq7" secondAttribute="bottom" constant="45" id="RuB-Py-18Z"/>
+                            <constraint firstItem="p69-2W-eOG" firstAttribute="top" secondItem="ivT-wL-yq7" secondAttribute="bottom" constant="25" id="RuB-Py-18Z"/>
                             <constraint firstItem="ivT-wL-yq7" firstAttribute="top" secondItem="mvF-lr-30n" secondAttribute="top" constant="25" id="fT3-Fg-YJJ"/>
                             <constraint firstItem="p69-2W-eOG" firstAttribute="leading" secondItem="mvF-lr-30n" secondAttribute="leading" constant="15" id="l5H-gO-PEf"/>
                             <constraint firstItem="ivT-wL-yq7" firstAttribute="leading" secondItem="mvF-lr-30n" secondAttribute="leading" constant="15" id="uIE-AR-JyS"/>
@@ -106,7 +106,7 @@
                             <outlet property="delegate" destination="uaP-go-xi0" id="UME-xZ-Vof"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="xIt-FV-mwl"/>
+                    <tabBarItem key="tabBarItem" title="Detail Information" selectedImage="person.and.person.fill" catalog="system" id="xIt-FV-mwl"/>
                     <navigationItem key="navigationItem" title="Persons List" id="PXk-Z2-7ma"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3b-MH-Bi1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,6 @@
         <!--Navigation Controller-->
         <scene sceneID="PVB-d7-YlP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ewo-rV-gKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="YKY-1U-0RN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8tO-gN-lcb">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -126,6 +125,7 @@
                         <segue destination="Tuf-ai-hh5" kind="relationship" relationship="rootViewController" id="UsX-5T-Og3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewo-rV-gKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="496" y="329"/>
         </scene>
@@ -136,6 +136,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="RRL-AE-ms4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ezk-ct-Exl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -150,6 +151,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

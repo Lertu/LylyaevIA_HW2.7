@@ -17,7 +17,11 @@ class PersonListTabBarViewController: UITabBarController {
         guard let viewcontrollers = self.viewControllers else {return}
         for viewcontroller in viewcontrollers{
             if let contactListVC = viewcontroller as? ContactListTableViewController {
+                
                 contactListVC.persons = persons
+            } else { guard let detailContactVC = viewcontroller as? DetailContactTableViewController else {return}
+                
+                detailContactVC.persons = persons
             }
         }
     }

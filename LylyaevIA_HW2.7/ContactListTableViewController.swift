@@ -8,19 +8,12 @@
 import UIKit
 
 class ContactListTableViewController: UITableViewController {
-
-    var persons: [Person] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-
+    var persons = [Person]()
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return persons.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -29,7 +22,7 @@ class ContactListTableViewController: UITableViewController {
         
         content.text = person.fullName
         cell.contentConfiguration = content
-
+        
         return cell
     }
     
@@ -39,6 +32,4 @@ class ContactListTableViewController: UITableViewController {
             detailInformVC.person = persons[indexPath.row]
         }
     }
-    
-
 }
