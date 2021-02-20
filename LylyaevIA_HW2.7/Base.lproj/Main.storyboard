@@ -106,7 +106,7 @@
                             <outlet property="delegate" destination="uaP-go-xi0" id="UME-xZ-Vof"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Detail Information" selectedImage="person.and.person.fill" catalog="system" id="xIt-FV-mwl"/>
+                    <tabBarItem key="tabBarItem" title="Detail Information" selectedImage="person.2.fill" catalog="system" id="xIt-FV-mwl"/>
                     <navigationItem key="navigationItem" title="Persons List" id="PXk-Z2-7ma"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3b-MH-Bi1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,7 +151,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
